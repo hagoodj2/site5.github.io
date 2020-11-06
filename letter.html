@@ -1,0 +1,115 @@
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+      <link rel="stylesheet" type="text/css" href="css/reset.css">
+      <link rel="stylesheet" type="text/css" href="css/main-styles.css">
+      <script src="js/simple.js"></script>
+      <script src="js/jquery35.js"></script>
+    </head>
+    <body>
+      <div class= 'container' id="main">
+        <div class="container_outer_img">
+          <span cursor:pointer; onmouseover="openNav()" class="navhover"><img src="images/navarrow.svg"></span>
+        </div>
+        <div class="sectionnav">
+          <a href="#anchor04" class="scrollLink">1</a>
+          <a href="#anchor20" class="scrollLink">2</a>
+          <a href="#anchor21" class="scrollLink">3</a>
+          <a href="#anchor22" class="scrollLink">4</a>
+          <a href="#anchor23" class="scrollLink">5</a>
+          <a href="#anchor24" class="scrollLink">6</a>
+        </div>
+        <header>
+          <!-- Use any element to open the sidenav -->
+
+          <div id="mySidenav" class="sidenav">
+            <div class="navhover2">
+              <span cursor:pointer onmouseover="closeNav()"><img src="images/navarrow2.svg"></span>
+            </div>
+            <div class="pagelinks">
+              <a href="index.html">Home</a>
+              <a href="history.html">History</a>
+              <a href="features.html">Design & Features</a>
+              <a href="letter.html">Letters</a>
+              <a href="usage.html">Usage</a>
+              <a href="influence.html">Cultural Influence</a>
+              <a href="extra.html">Extra</a>
+            </div>
+
+          </div>
+        </header>
+
+
+
+
+
+        <div class="container_content">
+
+          <div class="container_content_inner">
+            <div class="topofpagecontent">
+            <div class="topofpages">
+
+              <div class="subheads" id="anchor04">
+                <h2><span class="curlyone">~</span>Letters<span class="curlytwo">~</span></h2>
+              </div>
+
+            </div>
+            <div class="subheaddescription">
+              <p>Some letters are appear more interesting than others</p>
+            </div>
+            </div>
+            <div class="individualletters" id="anchor20">
+              <div class="individuallettersone">
+                <p>The letter A is a glyph that is not unknown in modern day. Alot of examples we see on the internet involves the letter a. The reason why is just to display its form base off of the chosen font. On the right, the stroke is more thin than the one on the right. Minion Pro letters are known to have elegant edges, more specificially, the letters have feet.</p>
+              </div>
+              <div class="individualletterstwo" id="anchor21">
+                <p>The letter M is quite similar to letter A. Starting on the left side, the firts dip is thicker than the two storkes connecting to it. The one connecting to the right side of the thicker strokes appears to be the thinnest and shortest stem of the letter. The letter brings out a simple yet interesting feel because it is readable and neat.</p>
+              </div>
+              <div class="individuallettersthree" id="anchor23">
+                <p>The letter Q is kind of awkward yet unique. The storke runnning through the oval shape of the letter is pokes out to the point where it is noticeable. That end point has an abnormal shape whereas the finer details on the following letters are have a more defined shape to them.</p>
+
+              </div>
+            </div>
+
+            <footer id="anchor24">
+              <div class="infofooter">
+              <div class="footerone">
+                <p>Home</p>
+              </div>
+              <div class="lineone">
+                <p>|</p>
+              </div>
+              <div class="footertwo">
+                <p>About</p>
+              </div>
+              <div class="linetwo">
+                <p>|</p>
+              </div>
+              <div class="footerthree">
+                <p>Contact Us</p>
+              </div>
+            </div>
+              <div class="footerfour">
+                <p>Copyright © Company, Inc. All Rights Reserved.</p>
+              </div>
+            </footer>
+          </div>
+        </div>
+    </div>
+  <div class="overlay"></div>
+  <script>
+  /* ScrollLink */
+
+        $(document).ready(function(){
+        $( "a.scrollLink" ).click(function( event ) {
+          event.preventDefault();
+          $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+
+  /*lookup*/
+    });
+  });
+  </script>
+    </body>
+  </html>

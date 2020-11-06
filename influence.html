@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main-styles.css">
+    <script src="js/simple.js"></script>
+    <script src="js/jquery35.js"></script>
+  </head>
+  <body>
+    <div class= 'container' id="main">
+      <div class="container_outer_img">
+          <span cursor:pointer; onmouseover="openNav()" class="navhover"><img src="images/navarrow.svg"></span>
+     </div>
+      <div class="sectionnav">
+        <a href="#anchor00" class="scrollLink">1</a>
+        <a href="#anchor30" class="scrollLink">2</a>
+        <a href="#anchor31" class="scrollLink">3</a>
+        <a href="#anchor32" class="scrollLink">4</a>
+        <a href="#anchor33" class="scrollLink">5</a>
+        <a href="#anchor34" class="scrollLink">6</a>
+        <a href="#anchor35" class="scrollLink">7</a>
+      </div>
+      <header>
+        <!-- Use any element to open the sidenav -->
+
+        <div id="mySidenav" class="sidenav">
+          <div class="navhover2">
+            <span cursor:pointer onmouseover="closeNav()"><img src="images/navarrow2.svg"></span>
+          </div>
+          <div class="pagelinks">
+            <a href="index.html">Home</a>
+            <a href="history.html">History</a>
+            <a href="features.html">Design & Features</a>
+            <a href="letter.html">Letters</a>
+            <a href="usage.html">Usage</a>
+            <a href="influence.html">Cultural Influence</a>
+            <a href="extra.html">Extra</a>
+          </div>
+
+        </div>
+      </header>
+
+
+
+
+
+      <div class="container_content">
+        <div class="container_content_inner">
+          <div class="topofpagecontent"  id="anchor00">
+          <div class="topofpages">
+
+            <div class="subheads">
+                <h2><span class="curlyone">~</span>Cultural Influence<span class="curlytwo">~</span></h2>
+            </div>
+
+          </div>
+          <div class="subheaddescription">
+            <p>The OpenType version (Minion Pro, 2000) added extended Latin support, including Vietnamese, as well as Cyrillic and Greek.</p>
+          </div>
+          </div>
+          <div class="singleparagraph" id="anchor30">
+            <p>Minion & Greek.
+              Gerry Leonidas, University of Reading, October 2017.
+            <p>
+            <p>For Minion 3, Slimbach has created a completely ne w version of the Greek, giving it the historically accurate reverse pen stress that characterizes written Greek, and adding polytonic letters in addition to monotonic.</p>
+          </div>
+
+          <div class="bigsentence" id="anchor31">
+            <div class="bigsentencetwo" id="culturebigsentence">
+            <p>The default forms are triangular, which are in tune with Minion’s humanist roots. (Minion 3 also includes alternates for letters whose shapes are derived from El and De.)</p>
+            </div>
+          </div>
+          <div class="cyrillicsection" id="anchor32">
+            <div id="cyrillicimgwithtext">
+            <div id="Cyrillic">
+
+            </div>
+            <div id="asideimg">
+              <p>Minion made an immediate impression on its initial release thanks to the detail work that Slimbach put into the typographic niceties</p>
+            </div>
+          </div>
+          <div class="cyrillictext" id="anchor33">
+            <p>Minion’s original Greek, with its more Western directional stress, was released as part of Minion Pro in 2000, and has been used successfully for more than a decade and still works well. Minion 3 offers this original pen stress as a stylistic set. The difference is only in the lowercase, where pen stress is most pronounced; <span class="tempdisplaynone">the capitals of both versions are identical. Consultant Gerry Leonidas says that, “in many ways, the first Minion Pro set the reference point for a whole series of subsequent modulated Greek typefaces.”</span></p>
+          </div>
+        </div>
+        <div  class="Csection" id="anchor34">
+        <div class="Csectionone">
+          <p>The possibilities in Greek type design have expanded in the ensuing decade and a half, which makes Minion Greek “perhaps the most fitting typeface to revisit,” according to Leonidas. “It marked a significant stage in the course of Greek typeface development, but also carried the signs of its being a very early step in this process.”</p>
+        </div>
+        <div class="Csectiontwo">
+          <p>In approaching a new version of the Greek lowercase for Minion, Slimbach had to find a way to incorporate the “reversed ductus” – or direction of stress within the letters – that was seen in early Greek types, which derived from the handwriting of Greek scholars during the Italian Renaissance.<span class="tempdisplaynone"> While keeping the reversed stress, he aimed to achieve “a very pure and principled traditional style, approaching the level of refinement present in the Latin.”</span></p>
+        </div>
+          </div>
+
+          <footer id="anchor35">
+            <div class="infofooter">
+            <div class="footerone">
+              <p>Home</p>
+            </div>
+            <div class="lineone">
+              <p>|</p>
+            </div>
+            <div class="footertwo">
+              <p>About</p>
+            </div>
+            <div class="linetwo">
+              <p>|</p>
+            </div>
+            <div class="footerthree">
+              <p>Contact Us</p>
+            </div>
+          </div>
+            <div class="footerfour">
+              <p>Copyright © Company, Inc. All Rights Reserved.</p>
+            </div>
+          </footer>
+        </div>
+</div>
+</div>
+<div class="overlay"></div>
+<script>
+/* ScrollLink */
+
+      $(document).ready(function(){
+      $( "a.scrollLink" ).click(function( event ) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+
+/*lookup*/
+  });
+});
+</script>
+  </body>
+</html>
